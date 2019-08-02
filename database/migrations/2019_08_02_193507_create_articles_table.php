@@ -13,7 +13,14 @@ class CreateArticlesTable extends Migration
      */
     public function up()
     {
-        //
+        Schema::create('articles', function (Blueprint $table) {
+            $table->increments('id');
+            $table->text('topic');
+            $table->text('intro');
+            $table->text('body');
+            $table->text('typeofcotigory');
+            $table->timestamps();
+        });
     }
 
     /**
@@ -23,6 +30,6 @@ class CreateArticlesTable extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('articles');
     }
 }
