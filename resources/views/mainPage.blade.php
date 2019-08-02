@@ -91,13 +91,14 @@
   <div class="album py-5 bg-light">
     <div class="container">
 
+    @foreach ($articls as $article)
       <div class="row">
         <div class="col-md-4">
           <div class="card mb-4 shadow-sm">
-            <h2 class="jumbotron-heading topic">Бизнес</h2>             
+            <h2 class="jumbotron-heading topic">{{ $article->topic }}</h2>             
             <img src="images/small/business.jpg" class="rounded float-left" alt="Бизнес картинка">
             <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text">{{ $article->intro }}}</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
                   <button type="button" class="btn btn-sm btn-outline-secondary">Подробней</button>                  
@@ -106,80 +107,8 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="card mb-4 shadow-sm">            
-            <h2 class="jumbotron-heading topic">Инвестиции</h2>            
-            <img src="images/small/invest.jpg" class="rounded float-left" alt="Инвестиционная картинка">
-            <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Подробней</button>                 
-                </div>                
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card mb-4 shadow-sm">
-            <h2 class="jumbotron-heading topic">IT</h2> 
-            <img src="images/small/it.jpg" class="rounded float-left" alt="Информационные технологии">
-            <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Подробней</button>                  
-                </div>               
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="card mb-4 shadow-sm">
-            <h2 class="jumbotron-heading topic">Спорт</h2> 
-            <img src="images/small/sport.jpg" class="rounded float-left" alt="Спорт">
-            <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Подробней</button>                  
-                </div>                
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card mb-4 shadow-sm">
-            <h2 class="jumbotron-heading topic">Игры</h2> 
-            <img src="images/small/games.jpg" class="rounded float-left" alt="Спорт">
-            <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Подробней</button>                  
-                </div>                
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card mb-4 shadow-sm">
-            <h2 class="jumbotron-heading topic">Музыка</h2> 
-            <img src="images/small/music.jpg" class="rounded float-left" alt="Спорт">
-            <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Подробней</button>                  
-                </div>                
-              </div>
-            </div>
-          </div>
-        </div>       
-      </div>
-    </div>
-  </div>
+    @endforeach
+        
 
 </main>
 
