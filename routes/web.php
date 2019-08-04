@@ -11,7 +11,5 @@
 |
 */
 
-Route::get('/', function () {
-    return view('mainPage');
-});
+Route::get('/', 'ArticleController@index');
 
