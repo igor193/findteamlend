@@ -83,16 +83,17 @@
 
   <section class="jumbotron text-center">
     <div class="container">
-      <h1 class="jumbotron-heading">{{ $mainscreen->topic }}</h1>
+      <h1 class="jumbotron-heading"></h1>
       <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it entirely.</p>
     </div>
   </section>
 
   <div class="album py-5 bg-light">
     <div class="container">
-
+    <div class="row">
+      
     @foreach ($articles as $article)
-      <div class="row">
+      
         <div class="col-md-4">
           <div class="card mb-4 shadow-sm">
             <h2 class="jumbotron-heading topic">{{ $article->topic }}</h2>             
@@ -106,9 +107,11 @@
               </div>
             </div>
           </div>
-        </div>
-      </div>
+        </div>      
     @endforeach
+
+    </div>
+  </div>
         
 
 </main>
