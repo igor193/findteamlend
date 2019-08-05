@@ -43,6 +43,10 @@
       background-size: cover;
   }
 
+  .card-text {
+    height: 37px;
+  }
+
   .float-left {
     width: auto;
     height: 225px;    
@@ -59,7 +63,17 @@
     margin-left: auto;    
   }
 
+.card.mb-4.shadow-sm {
+  height: 431px;
+}
 
+.lead.text-muted {
+  color: #ffffff;
+}
+
+.text-muted {
+  color: #f6f6f7!important;
+}
 
   @media (min-width: 400px) and (max-width: 575.98px) {
     .float-left {      
