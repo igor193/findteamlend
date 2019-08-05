@@ -83,8 +83,8 @@
 
   <section class="jumbotron text-center">
     <div class="container">
-      <h1 class="jumbotron-heading"></h1>
-      <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it entirely.</p>
+      <h1 class="jumbotron-heading">{{ $mainscreen->topic }}</h1>
+      <p class="lead text-muted">{{ $mainscreen->intro }}</p>
     </div>
   </section>
 
@@ -100,10 +100,7 @@
             <img src="{{ asset('/images/small/') . '/' . $article->typeofcotigory . '.jpg' }}" class="rounded float-left" alt="Бизнес картинка">
             <div class="card-body">
               <p class="card-text">{{ $article->intro }}</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Подробней</button>                  
-                </div>                
+              <div class="d-flex justify-content-between align-items-center">                               
               </div>
             </div>
           </div>

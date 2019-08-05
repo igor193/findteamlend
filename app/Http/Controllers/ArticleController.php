@@ -15,7 +15,7 @@ class ArticleController extends Controller
     public function index()
     {
         $articles = Article::select('topic', 'intro', 'typeofcotigory')->where('id', '<>', 1)->get();
-        $mainscreen = Article::select('topic', 'intro', 'typeofcotigory')->where('id', 1)->get();
+        $mainscreen = Article::select('topic', 'intro', 'typeofcotigory')->where('id', 1)->first();
       
         return view('mainPage')->with(['articles' => $articles,
                                        'mainscreen' => $mainscreen]);

@@ -59,6 +59,8 @@
     margin-left: auto;    
   }
 
+
+
   @media (min-width: 400px) and (max-width: 575.98px) {
     .float-left {      
       height: 300px;    
