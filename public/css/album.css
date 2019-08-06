@@ -75,6 +75,17 @@
   color: #f6f6f7!important;
 }
 
+.link {
+  display: block;
+  height: 100%;
+  color: black;  
+}
+
+.link:hover {
+  text-decoration: none;
+  color: black;
+}
+
   @media (min-width: 400px) and (max-width: 575.98px) {
     .float-left {      
       height: 300px;    

@@ -58,9 +58,10 @@
         <div class="col-sm-4 offset-md-1 py-4">
           <h4 class="text-white">Контакты</h4>
           <ul class="list-unstyled">
-            <li><a href="#" class="text-white">Follow on Twitter</a></li>
-            <li><a href="#" class="text-white">Like on Facebook</a></li>
-            <li><a href="#" class="text-white">Email me</a></li>
+            <li><a href="https://teleg.one/mmaksteterin" target="_blank" class="text-white">Follow on Telegram</a></li>
+            <li><a href="https://vk.com/official_findteam" target="_blank" class="text-white">Follow on VK</a></li>
+            <li><a href="https://instagram.com/official_findteam?igshid=16d9hhhbbvzy6" target="_blank" class="text-white">Instagram</a></li>
+            <li><a href="https://play.google.com/store/apps/details?id=com.company.trn" target="_blank" class="text-white">Find Team - Apps on Google Play</a></li>
           </ul>
         </div>
       </div>
@@ -93,8 +94,9 @@
     <div class="row">
       
     @foreach ($articles as $article)
-      
-        <div class="col-md-4">
+    
+      <div class="col-md-4">
+        <a href="https://play.google.com/store/apps/details?id=com.company.trn" class="link">
           <div class="card mb-4 shadow-sm">
             <h2 class="jumbotron-heading topic">{{ $article->topic }}</h2>             
             <img src="{{ asset('/images/small/') . '/' . $article->typeofcotigory . '.jpg' }}" class="rounded float-left" alt="Бизнес картинка">
@@ -104,6 +106,7 @@
               </div>
             </div>
           </div>
+          </a>
         </div>      
     @endforeach
 
