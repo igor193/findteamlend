@@ -18,9 +18,14 @@
   .jumbotron-heading {
     font-weight: 300;
   }
+
+  h1.jumbotron-heading {
+    font-weight: 600;
+  }
   
   .jumbotron .container {
     max-width: 40rem;
+    background: #6f585094;;
   }
   
   footer {
@@ -35,6 +40,11 @@
   .d-block {
       height: 35px;
       width: 40px;    
+  }
+
+  .footerTM {
+    color: black;
+    text-align: center;
   }
 
   .text-center {
@@ -69,6 +79,7 @@
 
 .lead.text-muted {
   color: #ffffff;
+  font-weight: 400;
 }
 
 .text-muted {
@@ -84,6 +95,16 @@
 .link:hover {
   text-decoration: none;
   color: black;
+}
+
+.btn-primary {
+  background-color: #0ca733;
+  width: 260px;
+  margin: 10px;
+}
+
+.ya-share2 {
+  float: left;
 }
 
   @media (min-width: 400px) and (max-width: 575.98px) {

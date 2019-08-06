@@ -86,6 +86,7 @@
     <div class="container">
       <h1 class="jumbotron-heading">{{ $mainscreen->topic }}</h1>
       <p class="lead text-muted">{{ $mainscreen->intro }}</p>
+      <a href="https://play.google.com/store/apps/details?id=com.company.trn" class="btn btn-primary btn-lg">Скачать</a>      
     </div>
   </section>
 
@@ -121,7 +122,16 @@
     <p class="float-right">
       <a href="#">Вверх</a>
     </p>
-    <p>&copy; Find Team</p>    
+    <p class="footerTM">&copy; Find Team <?php echo date ( 'Y' ) ; ?></p> 
+<script src="https://yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
+<script src="https://yastatic.net/share2/share.js"></script>
+<div class="ya-share2" data-services="vkontakte"></div> 
+<script src="https://yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
+<script src="https://yastatic.net/share2/share.js"></script>
+<div class="ya-share2" data-services="facebook"></div>
+<script src="https://yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
+<script src="https://yastatic.net/share2/share.js"></script>
+<div class="ya-share2" data-services="telegram"></div>   
   </div>
 </footer>
 
