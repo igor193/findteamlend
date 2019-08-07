@@ -107,6 +107,10 @@
   float: left;
 }
 
+strong {
+  margin-left: 10px; 
+}
+
   @media (min-width: 400px) and (max-width: 575.98px) {
     .float-left {      
       height: 300px;    
