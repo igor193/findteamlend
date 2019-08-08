@@ -123,6 +123,7 @@
       <a href="#">Вверх</a>
     </p>
     <p class="footerTM">&copy; Find Team <?php echo date ( 'Y' ) ; ?></p> 
+    <p class="footerTM">Created by DIM group</p> 
 <script src="https://yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
 <script src="https://yastatic.net/share2/share.js"></script>
 <div class="ya-share2" data-services="vkontakte"></div> 
